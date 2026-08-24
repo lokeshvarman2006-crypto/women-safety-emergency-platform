@@ -1,0 +1,33 @@
+{
+  "name": "women-safety-emergency-platform",
+  "version": "1.0.0",
+  "description": "A full-stack web application for emergency assistance and women safety.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "nodemon server/server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lokeshvarman2006-crypto/women-safety-emergency-platform.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/lokeshvarman2006-crypto/women-safety-emergency-platform/issues"
+  },
+  "homepage": "https://github.com/lokeshvarman2006-crypto/women-safety-emergency-platform#readme",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.6",
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "jsonwebtoken": "^9.0.3",
+    "mongoose": "^9.7.3"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}

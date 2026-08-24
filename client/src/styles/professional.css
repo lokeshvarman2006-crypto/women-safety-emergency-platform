@@ -1,0 +1,335 @@
+
+:root {
+  --ss-navy-950: #0f172a;
+  --ss-navy-900: #162033;
+  --ss-navy-800: #1d2a40;
+  --ss-navy-700: #273754;
+  --ss-red-600: #c9364a;
+  --ss-red-500: #dc4b5f;
+  --ss-red-100: #fdf0f2;
+  --ss-blue-600: #2563eb;
+  --ss-green-600: #16845b;
+  --ss-amber-600: #b7791f;
+  --ss-text: #172033;
+  --ss-muted: #64748b;
+  --ss-border: #e2e8f0;
+  --ss-surface: #ffffff;
+  --ss-bg: #f5f7fb;
+  --ss-shadow: 0 14px 35px rgba(15, 23, 42, 0.08);
+  --ss-shadow-hover: 0 20px 45px rgba(15, 23, 42, 0.13);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--ss-bg);
+  color: var(--ss-text);
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+section.py-5.bg-light {
+  background: var(--ss-bg) !important;
+  min-height: calc(100vh - 78px);
+}
+
+.container {
+  max-width: 1180px;
+}
+
+.card {
+  background: var(--ss-surface);
+  border: 1px solid rgba(226, 232, 240, 0.9) !important;
+  border-radius: 18px !important;
+  box-shadow: var(--ss-shadow);
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--ss-shadow-hover);
+}
+
+.card .card-body {
+  padding: 28px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--ss-text);
+  letter-spacing: -0.02em;
+}
+
+.text-muted {
+  color: var(--ss-muted) !important;
+}
+
+.form-control,
+.form-select {
+  min-height: 50px;
+  border: 1px solid #d7dee8;
+  border-radius: 10px;
+  padding: 12px 14px;
+  color: var(--ss-text);
+  background: #fff;
+  transition: border-color .2s ease, box-shadow .2s ease, background .2s ease;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: rgba(37, 99, 235, .55);
+  box-shadow: 0 0 0 4px rgba(37, 99, 235, .10);
+}
+
+label {
+  color: #334155;
+  font-weight: 600;
+  margin-bottom: 7px;
+}
+
+.btn {
+  border-radius: 10px;
+  font-weight: 650;
+  padding: 10px 18px;
+  transition: transform .2s ease, box-shadow .2s ease, background .2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+}
+
+.btn-danger {
+  background: var(--ss-red-600);
+  border-color: var(--ss-red-600);
+}
+
+.btn-danger:hover {
+  background: #ad2e40;
+  border-color: #ad2e40;
+  box-shadow: 0 8px 18px rgba(201, 54, 74, .20);
+}
+
+.btn-primary {
+  background: var(--ss-blue-600);
+  border-color: var(--ss-blue-600);
+}
+
+.btn-success {
+  background: var(--ss-green-600);
+  border-color: var(--ss-green-600);
+}
+
+.btn-warning {
+  color: #5f4210;
+  background: #f4c95d;
+  border-color: #f4c95d;
+}
+
+.btn-dark {
+  background: var(--ss-navy-900);
+  border-color: var(--ss-navy-900);
+}
+
+.table {
+  margin-bottom: 0;
+  color: var(--ss-text);
+}
+
+.table > :not(caption) > * > * {
+  padding: 15px 14px;
+  border-color: var(--ss-border);
+  vertical-align: middle;
+}
+
+.table thead th {
+  font-size: .78rem;
+  text-transform: uppercase;
+  letter-spacing: .06em;
+  font-weight: 750;
+  color: #475569;
+  background: #f8fafc !important;
+}
+
+.table tbody tr {
+  transition: background .15s ease;
+}
+
+.table tbody tr:hover {
+  background: #f8fafc;
+}
+
+.badge {
+  border-radius: 999px;
+  padding: 7px 11px;
+  font-weight: 700;
+  letter-spacing: .01em;
+}
+
+.bg-danger { background: var(--ss-red-600) !important; }
+.bg-success { background: var(--ss-green-600) !important; }
+.bg-primary { background: var(--ss-blue-600) !important; }
+
+.page-heading {
+  margin-bottom: 30px;
+}
+
+.page-heading h1,
+.page-heading h2 {
+  margin-bottom: 7px;
+  font-weight: 800;
+}
+
+.page-heading p {
+  color: var(--ss-muted);
+  margin-bottom: 0;
+}
+
+.stat-card {
+  height: 100%;
+  padding: 25px;
+  background: #fff;
+  border: 1px solid var(--ss-border);
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(15, 23, 42, .06);
+}
+
+.stat-card .stat-icon {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--ss-red-100);
+  color: var(--ss-red-600);
+  margin-bottom: 14px;
+}
+
+.stat-card .stat-value {
+  font-size: 2rem;
+  font-weight: 800;
+  margin: 0;
+}
+
+.stat-card .stat-label {
+  margin: 4px 0 0;
+  color: var(--ss-muted);
+  font-size: .92rem;
+}
+
+.management-card {
+  overflow: hidden;
+}
+
+.empty-state {
+  padding: 48px 20px;
+  text-align: center;
+  color: var(--ss-muted);
+}
+
+.empty-state-icon {
+  width: 64px;
+  height: 64px;
+  margin: 0 auto 16px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #eef2f7;
+  color: var(--ss-navy-700);
+  font-size: 28px;
+}
+
+.auth-page {
+  min-height: calc(100vh - 78px);
+  display: flex;
+  align-items: center;
+  padding: 60px 0 !important;
+  background:
+    radial-gradient(circle at 15% 20%, rgba(220, 75, 95, .08), transparent 30%),
+    radial-gradient(circle at 85% 80%, rgba(37, 99, 235, .07), transparent 30%),
+    var(--ss-bg) !important;
+}
+
+.auth-card {
+  max-width: 520px;
+  margin: 0 auto;
+  padding: 34px;
+}
+
+.auth-card.wide {
+  max-width: 650px;
+}
+
+.auth-brand {
+  width: 54px;
+  height: 54px;
+  margin: 0 auto 16px;
+  border-radius: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--ss-navy-900);
+  color: white;
+  font-size: 24px;
+}
+
+.auth-title {
+  text-align: center;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.auth-subtitle {
+  text-align: center;
+  color: var(--ss-muted);
+  margin-bottom: 28px;
+}
+
+.auth-footer {
+  text-align: center;
+  color: var(--ss-muted);
+  margin-top: 20px;
+  font-size: .9rem;
+}
+
+.action-card {
+  height: 100%;
+  padding: 26px;
+  border: 1px solid var(--ss-border);
+  border-radius: 16px;
+  background: #fff;
+  box-shadow: 0 10px 25px rgba(15,23,42,.06);
+}
+
+.action-card .action-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: #eef2f7;
+  color: var(--ss-navy-900);
+  margin-bottom: 14px;
+}
+
+@media (max-width: 768px) {
+  .card .card-body,
+  .auth-card {
+    padding: 22px;
+  }
+
+  .table {
+    min-width: 720px;
+  }
+
+  .page-heading {
+    margin-bottom: 22px;
+  }
+}

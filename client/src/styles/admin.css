@@ -1,0 +1,21 @@
+
+.admin-dashboard {
+  min-height: calc(100vh - 76px);
+  background: #f5f7fb;
+}
+
+.admin-stat-icon {
+  display: block;
+  margin: 0 auto 14px;
+  width: 48px;
+  height: 48px;
+  font-size: 24px;
+  color: #273754;
+}
+
+.admin-stat-icon.danger { color: #c9364a; }
+.admin-stat-icon.success { color: #16845b; }
+
+.admin-dashboard .table thead th {
+  background: #f8fafc !important;
+}

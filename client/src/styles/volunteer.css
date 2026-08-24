@@ -1,0 +1,16 @@
+
+.volunteer-dashboard {
+  min-height: calc(100vh - 76px);
+  background: #f5f7fb;
+}
+
+.volunteer-empty-icon {
+  display: block;
+  margin: 0 auto 14px;
+  font-size: 42px;
+  color: #273754;
+}
+
+.volunteer-dashboard .table thead th {
+  background: #f8fafc !important;
+}

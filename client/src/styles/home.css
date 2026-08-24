@@ -1,0 +1,134 @@
+/* =========================
+   FEATURE CARDS
+========================= */
+
+.feature-card {
+    border-radius: 18px;
+    transition: 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(22, 32, 51, 0.12) !important;
+}
+
+.feature-icon {
+    width: 75px;
+    height: 75px;
+    margin: 0 auto 20px;
+
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 30px;
+}
+
+.feature-danger {
+    background: #fce8eb;
+    color: #c9364a;
+}
+
+.feature-primary {
+    background: #e8eef8;
+    color: #243653;
+}
+
+.feature-success {
+    background: #e7f5ee;
+    color: #198754;
+}
+
+
+/* =========================
+   HOW IT WORKS
+========================= */
+
+.how-section {
+    padding: 80px 0;
+    background: #f5f7fa;
+}
+
+.step-card {
+    background: #fff;
+    border-radius: 18px;
+    padding: 35px;
+    text-align: center;
+    height: 100%;
+    transition: 0.3s ease;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+}
+
+.step-card:hover {
+    transform: translateY(-8px);
+}
+
+.step-icon {
+    width: 75px;
+    height: 75px;
+
+    margin: 0 auto 25px;
+
+    border-radius: 50%;
+
+    background: #1d2a40;
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-size: 28px;
+}
+
+.step-card h4 {
+    margin-bottom: 15px;
+}
+
+.step-card p {
+    color: #666;
+}
+
+
+/* =========================
+   STATISTICS
+========================= */
+
+.statistics-section {
+    padding: 80px 0;
+    background: white;
+}
+
+.stats-card {
+    background: white;
+    border-radius: 18px;
+
+    padding: 35px;
+
+    text-align: center;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.06);
+
+    transition: 0.3s ease;
+}
+
+.stats-card:hover {
+    transform: translateY(-8px);
+}
+
+.stats-icon {
+    font-size: 42px;
+    margin-bottom: 18px;
+}
+
+.stats-card h2 {
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.stats-card p {
+    color: #666;
+    margin-bottom: 0;
+}

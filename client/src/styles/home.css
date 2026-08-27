@@ -132,3 +132,11 @@
     color: #666;
     margin-bottom: 0;
 }
+/* =========================
+   HERO HEADINGS
+========================= */
+
+.hero-title {
+    color: #ffffff !important;
+    font-weight: 700;
+}

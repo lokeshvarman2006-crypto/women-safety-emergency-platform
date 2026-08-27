@@ -1,4 +1,5 @@
 import { FaShieldAlt, FaBell, FaArrowRight } from "react-icons/fa";
+import "../../styles/home.css";
 
 function Hero() {
   return (
@@ -15,14 +16,13 @@ function Hero() {
         <div className="row align-items-center">
 
           <div className="col-lg-6">
+<h1 className="display-3 fw-bold hero-title">
+  Your Safety
+</h1>
 
-            <h1 className="display-3 fw-bold">
-              Your Safety
-            </h1>
-
-            <h2 className="display-5 fw-bold mb-4">
-              Our Responsibility
-            </h2>
+<h2 className="display-5 fw-bold mb-4 hero-title">
+  Our Responsibility
+</h2>
 
             <p className="lead mb-4">
               The Women Safety & Emergency Assistance Platform provides
